@@ -1,0 +1,35 @@
+# CODEOWNERS file for map-handler-124
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-search @Armor-test/dept-reporting @Armor-test/dept-automation
+
+# Directory ownership
+/auth/ @Armor-test/dept-automation @Armor-test/team-security @Armor-test/team-frontend
+/build/ @Armor-test/dept-identity @Armor-test/dept-ui
+/static/ @Armor-test/squad-reporting @Armor-test/team-security @Armor-test/team-frontend
+/middleware/ @Armor-test/dept-security @Armor-test/unit-cloud
+/app/ @Armor-test/grp-reporting @Armor-test/dept-security
+/config/ @Armor-test/dept-ui @Armor-test/unit-test @Armor-test/grp-ui
+/core/ @Armor-test/team-reporting @Armor-test/team-research @Armor-test/dept-security
+/docs/ @Armor-test/team-governance @Armor-test/unit-governance
+/internal/ @Armor-test/dept-notifications @Armor-test/team-governance @Armor-test/team-frontend
+/security/ @Armor-test/grp-ui @Armor-test/squad-qa @Armor-test/dept-billing
+/utils/ @Armor-test/unit-test @Armor-test/dept-identity
+
+# File type ownership
+*.html @Armor-test/grp-reporting @Armor-test/squad-apps @Armor-test/squad-database
+*.yml @Armor-test/grp-api @Armor-test/team-reporting
+*.config @Armor-test/grp-payments @Armor-test/squad-search @Armor-test/dept-billing
+*.ts @Armor-test/grp-api @Armor-test/dept-automation @Armor-test/squad-ml
+*.ini @Armor-test/dept-automation @Armor-test/dept-identity @Armor-test/team-governance
+*.lock @Armor-test/squad-cache @Armor-test/dept-reliability @Armor-test/team-governance
+*.py @Armor-test/squad-api @Armor-test/squad-ux @Armor-test/unit-devops
+*.js @Armor-test/dept-test @Armor-test/dept-data @Armor-test/squad-frontend
+*.rs @Armor-test/unit-test @Armor-test/unit-design
+*.xml @Armor-test/squad-ml @Armor-test/unit-cloud
+*.rb @Armor-test/squad-cloud @Armor-test/team-security
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
